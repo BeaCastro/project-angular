@@ -1,0 +1,100 @@
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 45px 100px;
+}
+
+h1 {
+    width: 100%;
+    position: relative;
+}
+
+h2 {
+    width: 100%;
+    font-size: 20px;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    margin: 0 auto;
+    display: block;
+    background-color: #80D1F4;
+    width: 40px;
+    height: 3px;
+}
+
+span {
+    font-weight: 500;
+    margin-right: 7px;
+}
+
+/* Usuário */
+.user {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+/* Repositórios */
+.repositorys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    padding: 35px 35px 5px 35px;
+    border: 1px solid #282B30;
+    border-radius: 25px;
+}
+
+.repository {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 32%;
+    background-color: #282B30;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: ease-in-out 0.7s;
+}
+
+.repository:hover {
+    transform: scale(0.95); 
+    cursor: pointer;
+}
+
+p {
+    width: 100%;
+}
+
+.btn-visualizar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+a {
+    margin-top: 30px;
+    padding: 12px 40px;
+    text-decoration: none;
+    /* border-radius: 30px;
+    border: 1.5px solid #80D1F4; */
+    color: #80D1F4;
+    text-transform: uppercase;
+    transition:  0.8s;
+}
+/* 
+a:hover {
+    background-color: #80D1F4;
+    color: #12171D;
+} */

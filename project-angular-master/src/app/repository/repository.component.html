@@ -1,0 +1,18 @@
+<section>
+    <h1>Repositórios</h1>
+    <div class="repositorys" *ngFor="let userRepo of userRepos">
+        <!-- Usuário -->
+        <div class="user">
+            <h2> {{userRepo.username}} </h2>
+        </div>
+        
+        <!-- Respositórios -->
+        <div class="repository" *ngFor="let repo of userRepo.repos">
+            <p><span>Name:</span> {{ repo.name }}</p>
+            <p><span>Full name:</span> {{ repo.full_name }}</p>
+            <div class="btn-visualizar">
+                <a [href]="repo.html_url">Visualizar repositório</a>
+            </div>
+        </div> 
+    </div>
+</section>
